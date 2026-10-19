@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime / Local user data
+save_data.json
+error_log.txt
+data/Archive.zip
+
+# OS / Editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp

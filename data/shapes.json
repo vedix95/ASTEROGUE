@@ -1,0 +1,117 @@
+{
+  "player": {
+    "fuselage": {
+      "type": "polygon",
+      "points": [[16.0, 0.0], [5.0, 4.0], [-10.0, 4.0], [-6.0, 0.0], [-10.0, -4.0], [5.0, -4.0]],
+      "color": "COLOR_WHITE"
+    },
+    "left_wing": {
+      "type": "polygon",
+      "points": [[-2.0, -4.0], [-12.0, -15.0], [-6.0, -4.0]],
+      "color": "COLOR_WHITE"
+    },
+    "left_panel": {
+      "type": "polygon",
+      "points": [[-4.0, -4.0], [-10.0, -11.0], [-6.0, -4.0]],
+      "color": "panel_color"
+    },
+    "right_wing": {
+      "type": "polygon",
+      "points": [[-2.0, 4.0], [-12.0, 15.0], [-6.0, 4.0]],
+      "color": "COLOR_WHITE"
+    },
+    "right_panel": {
+      "type": "polygon",
+      "points": [[-4.0, 4.0], [-10.0, 11.0], [-6.0, 4.0]],
+      "color": "panel_color"
+    },
+    "canopy": {
+      "type": "polygon",
+      "points": [[8.0, 0.0], [2.0, 2.5], [-2.0, 0.0], [2.0, -2.5]],
+      "color": [0.2, 0.8, 1.0]
+    }
+  },
+  "enemies": {
+    "Fighter": [
+      {"type": "polygon", "points": [[1.0, 0.0], [-0.6, -0.7], [-0.3, 0.0], [-0.6, 0.7]], "color": "enemy_color"},
+      {"type": "line", "p1": [1.0, 0.0], "p2": [-0.3, 0.0], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Interceptor": [
+      {"type": "polygon", "points": [[1.1, 0.0], [-0.8, -0.25], [-0.8, 0.25]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[-0.2, 0.0], [-0.7, -0.85], [-0.5, 0.0], [-0.7, 0.85]], "color": "enemy_color"}
+    ],
+    "Bomber": [
+      {"type": "polygon", "points": [[0.7, 0.0], [0.2, -0.8], [-0.8, -0.6], [-0.8, 0.6], [0.2, 0.8]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.6, 0.0], [0.1, -0.35], [-0.2, 0.0], [0.1, 0.35]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Frigate": [
+      {"type": "polygon", "points": [[0.8, -0.3], [-0.8, -0.5], [-0.7, -0.15]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.8, 0.3], [-0.8, 0.5], [-0.7, 0.15]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.2, -0.15], [-0.4, -0.15], [-0.4, 0.15], [0.2, 0.15]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Corvette": [
+      {"type": "polygon", "points": [[0.9, 0.0], [0.1, -0.3], [-0.8, -0.6], [-0.5, 0.0], [-0.8, 0.6], [0.1, 0.3]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.4, 0.0], [0.0, -0.15], [-0.2, 0.0], [0.0, 0.15]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Cruiser": [
+      {"type": "polygon", "points": [[1.0, 0.0], [0.3, -0.6], [-0.8, -0.6], [-0.5, 0.0], [-0.8, 0.6], [0.3, 0.6]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.1, -0.75], [-0.3, -0.9], [-0.4, -0.6]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[0.1, 0.75], [-0.3, 0.9], [-0.4, 0.6]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Destroyer": [
+      {"type": "polygon", "points": [[0.8, -0.75], [1.0, -0.75], [1.0, 0.75], [0.8, 0.75]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[0.8, -0.25], [-0.8, -0.25], [-0.8, 0.25], [0.8, 0.25]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[-0.4, 0.0], [-0.9, -0.75], [-0.9, 0.75]], "color": "enemy_color"}
+    ],
+    "Dreadnought": [
+      {"type": "polygon", "points": [[1.0, 0.0], [0.0, -0.95], [-1.0, 0.0], [0.0, 0.95]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.5, 0.0], [0.0, -0.5], [-0.5, 0.0], [0.0, 0.5]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Recon": [
+      {"type": "polygon", "points": [[0.6, 0.0], [-0.5, -0.9], [-0.2, 0.0], [-0.5, 0.9]], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.2, 0.0], "p2": [-0.9, 0.0], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Carrier": [
+      {"type": "polygon", "points": [[0.95, -0.5], [-0.95, -0.6], [-0.95, 0.6], [0.95, 0.5]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.6, -0.65], [-0.7, -0.75], [-0.7, -0.5]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[0.6, 0.65], [-0.7, 0.75], [-0.7, 0.5]], "color": [1.0, 1.0, 1.0]},
+      {"type": "line", "p1": [0.7, 0.0], "p2": [-0.7, 0.0], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Swarmer": [
+      {"type": "polygon", "points": [[0.9, 0.0], [0.8, -0.3], [0.7, -0.5], [0.3, -0.6], [-0.3, -0.6], [-0.7, -0.5], [-0.8, -0.3], [-0.9, 0.0], [-0.8, 0.3], [-0.7, 0.5], [-0.3, 0.6], [0.3, 0.6], [0.7, 0.5], [0.8, 0.3]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.7, -0.15], [1.2, -0.3], [0.9, -0.05]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.7, 0.15], [1.2, 0.3], [0.9, 0.05]], "color": "enemy_color"},
+      {"type": "line", "p1": [0.2, -0.5], "p2": [-0.1, -1.1], "color": "enemy_color"},
+      {"type": "line", "p1": [0.2, 0.5], "p2": [-0.1, 1.1], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.4, -0.4], "p2": [-0.9, -0.9], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.4, 0.4], "p2": [-0.9, 0.9], "color": "enemy_color"}
+    ],
+    "Chaser": [
+      {"type": "polygon", "points": [[0.7, 0.0], [0.25, 0.55], [-0.35, 0.45], [-0.35, -0.45], [0.25, -0.55]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[-0.45, 0.0], [-0.75, 0.25], [-0.9, 0.0], [-0.75, -0.25]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[-0.8, 0.0], [-1.2, 0.45], [-1.5, 0.25], [-1.1, 0.0]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.5, -0.3], [1.15, -0.6], [1.25, -0.2], [0.7, -0.1]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.5, 0.3], [1.15, 0.6], [1.25, 0.2], [0.7, 0.1]], "color": "enemy_color"},
+      {"type": "line", "p1": [0.2, -0.45], "p2": [0.0, -1.05], "color": "enemy_color"},
+      {"type": "line", "p1": [0.2, 0.45], "p2": [0.0, 1.05], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.1, -0.45], "p2": [-0.3, -1.05], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.1, 0.45], "p2": [-0.3, 1.05], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.35, -0.45], "p2": [-0.55, -1.05], "color": "enemy_color"},
+      {"type": "line", "p1": [-0.35, 0.45], "p2": [-0.55, 1.05], "color": "enemy_color"}
+    ],
+    "Stalker": [
+      {"type": "polygon", "points": [[0.9, 0.0], [-0.5, -0.7], [-0.25, 0.0], [-0.5, 0.7]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.35, 0.0], [-0.2, -0.3], [-0.1, 0.0], [-0.2, 0.3]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[-0.1, -0.45], [-0.8, -1.05], [-0.45, -0.35]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[-0.1, 0.45], [-0.8, 1.05], [-0.45, 0.35]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.45, -0.18], [0.55, -0.2]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[0.45, 0.18], [0.55, 0.2]], "color": [1.0, 1.0, 1.0]}
+    ],
+    "Boss": [
+      {"type": "polygon", "points": [[0.8, 0.0], [0.35, -0.75], [-0.35, -0.85], [-0.15, 0.0], [-0.35, 0.85], [0.35, 0.75]], "color": "enemy_color"},
+      {"type": "polygon", "points": [[0.55, -0.3], [1.2, -0.7], [1.4, -0.2], [0.7, -0.1]], "color": [1.0, 1.0, 1.0]},
+      {"type": "polygon", "points": [[0.55, 0.3], [1.2, 0.7], [1.4, 0.2], [0.7, 0.1]], "color": [1.0, 1.0, 1.0]},
+      {"type": "circle", "center": [0.0, 0.0], "radius": 0.16, "color": [1.0, 1.0, 1.0], "segments": 12}
+    ]
+  }
+}
